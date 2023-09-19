@@ -25,6 +25,6 @@ jobs:
       uses: actions/create-release@v1
       with:
         # tag_name: ${{ github.tag }}
-        release_name: Release ${{ github.tag }}
+        release_name: Release
         draft: false
         prerelease: false
