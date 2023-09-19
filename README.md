@@ -1,3 +1,7 @@
+## 三方库
+- clap: 解析命令行
+- dirs: 获取用户目录
+
 ## 开发
 ```shell
  cargo run add -h
