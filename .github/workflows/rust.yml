@@ -16,15 +16,13 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build Release
-      run: cargo build -r
+      run: cargo build -r --all-targets
 
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
-
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
       with:
         tag_name: v${{ github.ref }}
         release_name: Release ${{ github.ref }}
