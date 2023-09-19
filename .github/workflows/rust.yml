@@ -37,6 +37,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./target/x86_64-unknown-linux-musl/release/hello_action
-        asset_name: hello_action
+        asset_path: ./target/x86_64-unknown-linux-musl/release/todo-list
+        asset_name: todo-list
         asset_content_type: application/octet-stream
